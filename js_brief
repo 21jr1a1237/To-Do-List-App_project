@@ -1,0 +1,131 @@
+Nice  — idi already solid code 
+Ippudu line by line simple ga explain chestha (easy ga ardham ayye laga).
+________________________________________
+1. Variables (starting)
+let taskList = document.getElementById("taskList");
+let input = document.getElementById("taskInput");
+let filter = "all";
+Meaning:
+•	taskList → <ul> element (tasks list) 
+•	input → input box (task enter cheyadaniki) 
+•	filter → current filter (all / active / completed) 
+________________________________________
+2. Page load appudu
+window.onload = loadTasks;
+Meaning:
+•	Page open ayinappudu → loadTasks() run avutundi 
+•	LocalStorage lo unna tasks load avutayi 
+________________________________________
+ 3. Enter key support
+input.addEventListener("keypress", e => {
+    if (e.key === "Enter") addTask();
+});
+ Meaning:
+•	Enter press chesthe → addTask() call avutundi 
+•	Button click lekunda task add cheyachu 
+________________________________________
+ 4. Add Task
+function addTask() {
+    let text = input.value.trim();
+    if (!text) return;
+
+    createTask(text);
+    input.value = "";
+    saveTasks();
+}
+Steps:
+1.	Input nundi text tiskuntundi 
+2.	Empty aithe stop 
+3.	createTask() call chestundi 
+4.	Input clear chestundi 
+5.	Tasks save chestundi 
+________________________________________
+ 5. Create Task (MAIN FUNCTION )
+function createTask(text, completed = false)
+Idi task ni UI lo create chestundi
+________________________________________
+Span (task text)
+let span = document.createElement("span");
+span.innerText = text;
+Task text display kosam
+________________________________________
+ Completed state
+if (completed) li.classList.add("completed");
+ Task already complete aithe → line strike
+________________________________________
+Click → mark complete
+span.onclick = () => {
+    li.classList.toggle("completed");
+    saveTasks();
+};
+ Click chesthe:
+•	Complete / undo toggle 
+•	Save chestundi 
+________________________________________
+ 6. Edit Feature (double click )
+span.ondblclick = () => {
+Double click chesthe:
+•	span → input field ga marutundi 
+•	edit cheyachu 
+edit.onblur = () => saveEdit(edit, span, li);
+Click outside → save
+if (e.key === "Enter")
+Enter press → save
+________________________________________
+7. Delete Button
+let del = document.createElement("button");
+del.innerText = "X";
+Delete button create chestundi
+del.onclick = e => {
+    e.stopPropagation();
+    li.remove();
+    saveTasks();
+};
+Click chesthe:
+•	Task delete 
+•	Save update 
+________________________________________
+8. Save Tasks (LocalStorage )
+function saveTasks()
+All tasks collect chestundi
+document.querySelectorAll("li")
+All tasks select chestundi
+localStorage.setItem("tasks", JSON.stringify(tasks));
+ Browser lo save chestundi
+________________________________________ 9. Load Tasks
+function loadTasks()
+Page reload ayinappudu:
+•	LocalStorage nundi tasks tiskuntundi 
+•	createTask() tho display chestundi 
+________________________________________
+10. Filter Tasks
+function filterTasks(type)
+3 options:
+•	all 
+•	active 
+•	completed 
+li.style.display = "none";
+Condition batti hide/show chestundi
+________________________________________
+11. Clear Completed
+function clearCompleted()
+Completed tasks anni remove chestundi
+________________________________________
+12. Counter (VERY IMPORTANT )
+function updateCount()
+Total tasks count:
+document.querySelectorAll("li").length;
+Completed count:
+document.querySelectorAll(".completed").length;
+Output:
+2/5 completed
+________________________________________
+Final Flow (easy)
+1.	Task add → createTask 
+2.	Save → localStorage 
+3.	Click → complete 
+4.	Double click → edit 
+5.	X → delete 
+6.	Filter → show/hide 
+7.	Counter → update
+
