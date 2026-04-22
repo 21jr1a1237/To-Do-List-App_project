@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Advanced To-Do</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">TO-DO LIST</h1>
+
+<div class="container">
+
+    <div class="input-box">
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <button onclick="addTask()">Add</button>
+    </div>
+
+    <div class="filters">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('active')">Active</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="footer">
+        <span id="count"></span>
+        <button onclick="clearCompleted()">Clear Completed</button>
+    </div>
+
+</div>
+
+<script src="Script.js"></script>
+</body>
+</html>

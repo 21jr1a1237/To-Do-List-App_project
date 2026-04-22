@@ -1,0 +1,118 @@
+--->Features (Ee project lo unnaavi)
+--->Add Task
+->Feature:
+New task add cheyachu
+->Ela use cheyali:
+Input box lo type chey (ex: ugra)
+Add button click or Enter press
+->Result:
+Task list lo add avutundi
+______________________________
+--->Mark as Completed
+->Feature:
+Task complete ayithe mark cheyachu
+->Ela use cheyali:
+Task meeda click chey
+->Result:
+Line strike avutundi (completed)
+______________________________
+--->Delete Task
+->Feature:
+Task remove cheyachu
+->Ela use cheyali:
+Task pakkana X button click chey
+->Result:
+Task delete avutundi
+______________________________
+---> Edit Task (Advanced )
+->Feature:
+Task change cheyachu
+->Ela use cheyali:
+Task meeda double click chey
+Edit chesi Enter pres
+->Result:
+Task update avutundi
+______________________________
+--->Filters (All / Active / Completed)
+->Feature:
+Tasks ni filter cheyachu
+->Buttons:
+All → anni tasks chupisthayi
+Active → incomplete tasks
+Completed → completed tasks
+______________________________
+--->Clear Completed
+->Feature:
+Completed tasks anni remove chestundi
+->Ela use cheyali:
+Clear Completed button click
+->Result:
+Completed tasks delete avuthayi
+______________________________
+---> Task Counter
+->Feature:
+Total + completed count chupisthundi
+Example:
+2/5 completed
+_______________________________
+--->Local Storage 🔥 (Very Important)
+->Feature:
+Page refresh ayina tasks delete avvu
+Ela work avuthundi:
+Browser lo data save chestundi
+______________________________
+--> Use cheyadam ila:
+Task type chey
+Add / Enter press
+Complete ayithe click chey
+Edit kavali ante double click
+Delete kavali ante X
+Filter use chey
+Clear completed use chey
+____________________________________
+--> Means ippudu nee To-Do App:
+Add ✔️
+Delete ✔️
+Complete ✔️
+Edit ✔️
+Filter ✔️
+Counter ✔️
+LocalStorage ✔️
+__________________________________________
+What is the use of this To-Do List Project?
+
+This project is used to manage and organize daily tasks efficiently.
+Simple ga:
+“Panulu marchipokunda track cheyadaniki use avuthundi”
+________________________________________
+Real-Life Uses
+ 1. Daily Task Management
+•	Day lo cheyyali ani tasks list chesukovachu 
+•	Example: Study, gym, coding 
+________________________________________
+ 2. Productivity Improve
+•	Complete chesina tasks mark cheyadam valla
+ motivation periguthundi  
+________________________________________
+ 3. Work Tracking
+•	Pending vs completed tasks clear ga kanipistayi 
+________________________________________
+ 4. Personal Planner
+•	Small daily planner laga use cheyachu 
+________________________________________
+ 5. Reminder System (basic)
+•	Tasks list lo undadam valla marchipokunda untav 
+______________________________________________
+Technical Uses (important )
+ Developer ga:
+ 1. DOM Manipulation practice
+•	Elements add / delete / update 
+ 2. Event Handling
+•	Click, double-click, Enter key 
+ 3. Local Storage
+•	Data browser lo save cheyadam 
+ 4. UI Design
+•	Clean interface build cheyadam 
+ 5. Logic Building
+•	Real-world problem solve cheyadam
+

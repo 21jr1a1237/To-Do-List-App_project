@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    margin-top: 20px;
+}
+
+.container {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 340px;
+    backdrop-filter: blur(10px);
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #00c853;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* filters */
+.filters {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    padding: 10px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+}
+
+/* completed */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* footer */
+.footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* edit input */
+.edit-input {
+    width: 70%;
+}
